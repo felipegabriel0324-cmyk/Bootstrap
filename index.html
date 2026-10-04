@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
@@ -35,19 +34,56 @@
 					<div class="navbar-nav gap-2 w-100">
 						<a class="nav-link text-white" 
 							href="#">Início</a>
-						<a class="nav-link text-white" 
-							href="#">Catálogo</a>
+						<div class="dropdown">
+							<button class="btn dropdown-toggle"
+								type="button" 
+								id="dropdownMenuButton" 
+								data-bs-toggle="dropdown" 
+								aria-haspopup="true" 
+								aria-expanded="false">
+								Catalogo</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">1</a>
+								<a class="dropdown-item" href="#">2</a>
+								<a class="dropdown-item" href="#">3</a>
+							</div>
+						</div>
 						<a class="nav-link text-white" 
 							href="#">Sobre</a>
+						<input class="form-control w-25 mx-auto" 
+						type="search" 
+						placeholder="search" 
+						aria-label="search">
 						<a class="nav-link ms-auto p-2 bg-success text-white rounded-1" 
 							href="#">Entrar</a>
 					</div>
 				</div>
 			</div>
 		</nav>
-		<header>
+		<header class="d-flex flex-column align-items-center border-bottom">
+			<h1 class="display-6">Aprenda a construir interfaces</h1>
+			<p class="lead">Grade responsiva, componentes prontos e utilitarios</p>
+			<button class="btn btn-primary" type="button">Ver cursos</button>
 		</header>
 		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="text-dark d-flex flex-column border flex-grow-1">
+							<img src="https://placehold.co/400x300"
+							class="img-fluid"
+							alt="imagem placeholder">
+							<p class="bg-success text-white border rounded-3 me-auto">Novo</p>
+							<h3 class="">Layout com grade</h3>
+							<p class="">Container, row e col: a base de toda página Bootstrap.</p>
+							<div class="d-grid">
+								<button class="btn btn-light text-dark border border-3 border-primary">Saiba mais
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
 		</footer>
